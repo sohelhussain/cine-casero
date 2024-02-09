@@ -1,0 +1,75 @@
+@font-face {
+  font-family: ivy-light;
+  src: url(fonts/IvyMode-Light.woff2);
+}
+@font-face {
+  font-family: ivy-regular;
+  src: url(/fonts/IvyMode-Regular.woff2);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#container-third {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #202020;
+  padding: 0% 8%;
+}
+.overlay {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.529),
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 0.529)
+  );
+}
+.third-left {
+  padding: 12% 0%;
+}
+.third-left h1 {
+  font-family: ivy-regular;
+  font-size: 8vw;
+  line-height: 1;
+  text-transform: capitalize;
+  color: #d5d4cf;
+}
+.para {
+  margin: 50px 0%;
+}
+.para p {
+  font-family: ivy-light;
+  font-size: 1.1vw;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #d5d4cf;
+  width: 40vw;
+}
+.para p strong {
+  font-weight: 900;
+  font-family: ivy-regular;
+  font-size: 1.4;
+}
+#container-third a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: ivy-light;
+}
+.third-midium{
+  
+}
