@@ -20,7 +20,7 @@ body {
 #main {
   width: 100%;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #container-third {
   height: 100vh;
@@ -28,6 +28,7 @@ body {
   position: relative;
   background-color: #202020;
   padding: 0% 8%;
+  display: flex;
 }
 .overlay {
   width: 50%;
@@ -64,12 +65,35 @@ body {
   font-family: ivy-regular;
   font-size: 1.4;
 }
-#container-third a{
+#container-third a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
   font-family: ivy-light;
 }
-.third-midium{
-  
+.third-midium {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  left: 50%;
+  position: absolute;
+  width: 25vw;
+  top: 10%;
+}
+.cards {
+  width: 20vw;
+  height: 28vw;
+  border-radius: 10px;
+  background-color: gray;
+}
+.third-last {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  left: 73%;
+  position: absolute;
+  width: 25vw;
+  top: -120%;
 }
