@@ -11,6 +11,7 @@
   padding: 0%;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  font-family: "ivy-regular";
 }
 html,
 body {
@@ -22,6 +23,196 @@ body {
   position: relative;
   /* overflow: hidden; */
 }
+nav {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw 5vw;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 100;
+  letter-spacing: -0.1px;
+  position: fixed;
+  display: none;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul li {
+  margin-left: 50px;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+ul li:nth-child(4) {
+  /* background-color: green; */
+  border-radius: 50%;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+ul li:nth-child(4) i {
+  display: inline-block;
+}
+/* --------------------------------container-first----------------- */
+#container-first {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  /* gap: 30px; */
+}
+.hero-heads {
+  text-align: center;
+  font-weight: 100;
+  background-color: red;
+  font-size: 1.3vw;
+  margin-bottom: 25%;
+  transform: scale(0);
+  opacity: 0;
+}
+.heads-para {
+  margin-top: 5%;
+}
+.hero-video-box {
+  width: 100%;
+  height: 70%;
+  transform: translateY(40%);
+  /* margin-top: 20%; */
+  background-color: aqua;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .video-elem {
+  width: calc(100% / 3);
+  height: 100%;
+  border: 2px solid #d5d4cf;
+  border-radius: 20px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+} */
+.elem-left {
+  width: 40%;
+  height: 100%;
+  border: 2px solid red;
+  transform: translateX(-10%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.elem-left .inner-elems:nth-child(1){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -15%;
+}
+.elem-left .inner-elems:nth-child(2){
+  position: absolute;
+  right: 0%;
+}
+.inner-elems:nth-child(1) .in-pic{
+  height: 55%;
+}
+.elem-left .inner-elems .in-pic{
+  border-radius: 30px;
+  height: 45%;
+}
+.elem-left .inner-elems .in-pic:nth-child(2){
+  height: 35%;
+}
+.elem-center {
+  width: 40%;
+  height: 100%;
+  border: 2px solid red;
+  border-radius: 25px;
+  transform: translatey(10%);
+}
+.elem-right {
+  width: 40%;
+  height: 100%;
+  border: 2px solid red;
+  transform: translateX(10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.elem-right .inner-elems:nth-child(1){
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: absolute;
+  left: 0%;
+}
+.elem-right .inner-elems:nth-child(2){
+  position: absolute;
+  right: -15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.elem-right .inner-elems:nth-child(1) .in-pic:nth-child(1){
+  height: 25%;
+  border-radius: 20px;
+}
+.elem-right .inner-elems:nth-child(1) .in-pic:nth-child(2){
+  height: 48%;
+  border-radius: 20px;
+}
+.elem-right .inner-elems:nth-child(2) .in-pic{
+  height: 65%;
+}
+.inner-elems {
+  background-color: green;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  gap: 50px;
+  position: relative;
+}
+.in-pic {
+  background-color: gray;
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.in-pic img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* -------------------------------------container-second------------------- */
+#container-second {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0.412);
+}
+/* -------------------------------------container-third------------------- */
 #container-third {
   height: 100vh;
   width: 100%;
@@ -29,6 +220,8 @@ body {
   background-color: #202020;
   padding: 0% 8%;
   display: flex;
+  overflow: hidden;
+  display: none;
 }
 .overlay {
   width: 50%;
