@@ -44,7 +44,7 @@ homeAni.to(".hero-heads",{
 
 const home = gsap.timeline({
     scrollTrigger:{
-        trigger:"#container-first",
+        trigger:"#container-first>.hero-video-box",
         scroller:"body",
         markers:true,
         start:"10% 0%",
@@ -54,7 +54,7 @@ const home = gsap.timeline({
     }
 })
 home.to(".elem-center",{
-    width:"600%",
+    width:"1000%",
     // height:"300%",
 }, "hom")
 home.to(".elem-left",{
