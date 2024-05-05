@@ -53,13 +53,13 @@ const home = gsap.timeline({
         scrub: 1
     }
 })
-home.to(".elem-center",{
-    width:"1000%",
-    // height:"300%",
-}, "hom")
 home.to(".elem-left",{
     x:"-100%"
 }, "hom")
 home.to(".elem-right",{
     x:"100%"
+}, "hom")
+home.to(".elem-center",{
+    width:"1000%",
+    // height:"300%",
 }, "hom")
